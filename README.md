@@ -69,7 +69,8 @@ package.json の中身に以下を追加
 
 これで `yarn start` するだけでローカルサーバを起動できる
 
-## ここまでの作業を行った時点の webpack.config.js
+### おまけ
+#### この時点の webpack.config.js
 
 ```js
 const path = require("path");
@@ -92,7 +93,7 @@ module.exports = {
       }
     ]
   },
-  devServer: {
+  devServer: {  // ここは 6. で追加
     contentBase: path.resolve(__dirname, "dist"), // dist ディレクトリのファイルを確認する
     port: 3000, //3000 ポートを使用
   },
