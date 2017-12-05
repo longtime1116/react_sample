@@ -18,6 +18,10 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    contentBase: path.resolve(__dirname, "dist"), // dist ディレクトリのファイルを確認する
+    port: 3000, //3000 ポートを使用
+  },
   resolve: {
     extensions: [".js", ".jsx"] // js ファイル、jsx ファイルを対象とする
   }
